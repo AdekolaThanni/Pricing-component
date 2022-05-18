@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="heading-1">Simple, traffic-based pricing</h1>
+      <p class="sub-heading">
+        <span> Sign-up for our 30-day trial.</span>
+        <span> No credit card required.</span>
+      </p>
+    </header>
+
+    <main>
+      <section class="pricing">
+        <p class="pricing__pageview text upper">100k pageviews</p>
+        <p class="text align-right">
+          <span class="pricing__price">$16.00</span
+          ><span class="center-horiz">/ month</span>
+        </p>
+        <input
+          type="range"
+          id="range"
+          class="pricing__range"
+          min="0"
+          max="200"
+          oninput="rangevalue.value=value"
+        />
+        <output id="rangevalue">0</output>
+        <div class="pricing__billing">
+          <p class="text display-flex">
+            Monthly Billing
+            <span class="switch"><span class="switch__btn"></span></span>
+          </p>
+          <p class="text display-flex">
+            Yearly Billing <span class="discount-span">25% discount</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="features">
+        <ul class="features__list">
+          <li class="features__item text">
+            <img
+              src="images/icon-check.svg"
+              alt="Icon check"
+              class="features__check"
+            />
+            Unlimited websites
+          </li>
+          <li class="features__item text">
+            <img
+              src="images/icon-check.svg"
+              alt="Icon check"
+              class="features__check"
+            />
+            100% data ownership
+          </li>
+          <li class="features__item text">
+            <img
+              src="images/icon-check.svg"
+              alt="Icon check"
+              class="features__check"
+            />
+            Email reports
+          </li>
+        </ul>
+
+        <button class="btn btn-start">Start my trial</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/AdekolaThanni">Adekola Thanni</a>.
+    </div>
+
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/math.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

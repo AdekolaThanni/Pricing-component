@@ -1,0 +1,48 @@
+* {
+    // Make all elements width irrespective of their paddings  and borders
+    box-sizing: border-box;
+
+    //  Reset all margin and padding values to zero
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    // Make font size resposive to user web browser preference
+    // 1 rem = 10px
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+    background-image: url("../images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    // background-position: center;
+
+    padding-top: 10rem;
+
+}
+
+main {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .05rem .2rem rgba(0,0,0,.5);
+
+    padding: 5rem 5rem 0;
+
+    @media only screen and (max-width: $bp-largest){
+        width: 90%;
+        padding: 5rem 0 0;
+    }
+}
+
+.attribution {
+    width: fit-content;
+    margin: 4rem auto 0;
+    font-size: 1.4rem;
+    text-align: center;
+}

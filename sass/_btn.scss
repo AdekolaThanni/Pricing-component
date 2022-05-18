@@ -1,0 +1,21 @@
+.btn {
+    border: none;
+    width: 18rem;
+    height: 4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+        transform: scale(1.07);
+    }
+
+    &:active {
+        transform: scale(1.02);
+    }
+}
+
+.btn-start {
+    background-color: $dark-desaturated-blue;
+    color: #fff;
+}

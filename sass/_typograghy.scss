@@ -1,0 +1,26 @@
+.heading-1 {
+    color: $dark-desaturated-blue;
+    font-size: 3rem;
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 2rem;
+    }
+}
+.sub-heading {
+    color: $grayish-blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-largest){
+        // font-size: 1.7rem;
+        flex-direction: column;
+         & > span {
+             margin-bottom: .5rem;
+         }
+    }
+}
+
+.text {
+    color: $grayish-blue;
+}
